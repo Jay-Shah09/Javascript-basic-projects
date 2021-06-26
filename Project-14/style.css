@@ -1,0 +1,108 @@
+body{
+    background:rgb(231, 243, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+.main{
+    background:white;
+    padding:0 40px 40px 40px;
+    width:75vw;
+    margin:190px auto;
+    border-radius: 7px;
+    max-width:500px;
+    box-shadow: 5px 6px 12px rgba(0,0,0,0.3);
+}
+.app-name{
+    text-align: center;
+    margin-top:60px;
+}
+.input-item{
+    border:none;
+    background:rgb(221, 237, 248);
+    border-radius: 5px;
+    width:100%;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.form{
+    position:relative;
+    margin-top:40px;
+}
+.submit-btn{
+    position:absolute;
+    width:25%;
+    height:100%;
+    top:0;
+    left:75%;
+    border-radius: 5px;
+    border:none;
+    background:rgb(117, 188, 235);
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+.grocery-container{
+    margin-top: 25px;
+}
+.clear-btn{
+    color:red;
+    background:white;
+    border:none;
+    letter-spacing: 2px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.clear-btn-container{
+    margin-top:30px;
+    display:grid;
+    justify-items: center;
+}
+.edit-btn{
+    color:green;
+    font-size: 15px;
+    background:white;
+    border:none;
+    cursor: pointer;
+}
+.delete-btn{
+    color:red;
+    font-size: 15px;
+    background:white;
+    border:none;
+    cursor: pointer;
+}
+.grocery-item{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btn-container{
+    justify-self: right;
+    align-self: center; 
+}
+.item-name{
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.alert{
+    text-transform: capitalize;
+    text-align:center;
+    padding:3px;
+    font-size:18px;
+    height:25px;
+}
+.danger{
+    color:red;
+    background:rgba(256,0,0,0.3);
+}
+.success{
+    color:green;
+    background: rgba(0,256,0,0.3);
+}
+.grocery-container{
+    visibility: hidden;
+}
+.show-container{
+    visibility: visible;
+}

@@ -1,0 +1,32 @@
+:root{
+    --letter-spacing:3px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display:grid;
+}
+.inc-btn,.reset-btn,.dec-btn{
+    letter-spacing: var(--letter-spacing);
+    text-transform: uppercase;
+    padding:5px 8px;
+    border:2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.inc-btn{
+    margin-left: 20px;
+}
+.dec-btn{
+    margin-right: 20px;
+}
+.container{
+    display:grid;
+    justify-items: center;
+    align-content:center;
+    height:100vh;
+}
+.counter{
+    font-size:65px;
+    font-weight: 500;
+}

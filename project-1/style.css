@@ -1,0 +1,87 @@
+:root{
+    --primary-clr:black;
+    --letter-spacing:3px;
+    --transition:all 0.3s linear;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1,h2,h3,h4{
+    text-transform: capitalize;
+}
+ul{
+    list-style-type: none;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    padding:5px 10px;
+    font-size: 18px;
+    letter-spacing: var(--letter-spacing);
+    font-weight: 600;
+    border:3px solid var(--primary-clr);
+    background:transparent;
+    transition: var(--transition);
+    margin-top:20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button:hover{
+    background:var(--primary-clr);
+    color:white;
+    border-color: rgb(33, 116, 241);
+}
+
+.nav-bar{
+    height:70px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 7px 8px rgba(0,0,0,0.5);
+    width:100vw;
+    background:white;
+    margin-top:-8px;
+}
+.nav-bar h2{
+    color: rgb(33, 116, 241);
+}
+ul li a{
+    padding-left: 30px;
+    letter-spacing: var(--letter-spacing);
+    color:black;
+    transition: var(--transition);
+}
+ul li a:hover{
+    color:rgb(33, 116, 241);
+}
+.container h2{
+    background:var(--primary-clr);
+    border-radius: 10px;
+    color:white;
+    padding:20px;
+    text-align: center;
+    min-width:470px;           /* min word is important. */
+    box-sizing: border-box;    /* VERY VERY IMPORTANT. */
+}
+.container{
+    display:grid;
+    place-items: center;
+    align-content: center;
+    height:200px;
+}
+.main{
+    display: grid;
+    height:100vh;
+}
+.color{
+    color:rgb(33, 116, 241);
+}
+ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}

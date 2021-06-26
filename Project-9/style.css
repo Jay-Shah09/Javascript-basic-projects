@@ -1,0 +1,99 @@
+body{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-header{
+    height:100px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:0 20px;
+}
+.toggle-btn-container{
+    display:grid;
+    place-items: center;
+    justify-self: end;
+}
+.toggle-btn{
+    font-size:30px;
+    background:white;
+    border:none;
+    border-radius:4px;
+    cursor: pointer;
+}
+.links-container{
+    height: 0;
+    margin-top:-15px;
+    overflow: hidden;
+    transition:0.3s;
+}
+.show-links{
+    height:280px;   /* If this height is specified in css then problem will occur when we remove or add any link therefore we have to decide this height dynamically in js.*/
+}
+.links{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-bottom: 20px;
+}
+
+.links a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    transition:0.3s;
+    margin-left: -45px;
+}
+.links a:hover{
+    transform:translateX(7px);
+    background:rgb(213, 232, 236);
+} 
+.fixed-nav{
+    position:fixed;
+    width:98vw;
+    box-shadow: 0 10px 8px rgba(0,0,0,0.5);
+    background:white;
+    top:0;
+}
+.banner{
+    background:pink;
+    height:calc(100vh - 100px);
+    width:98vw;
+    display:grid;
+    place-items: center;
+}
+.section{
+    height:600px;
+    text-align: center; 
+    width:98vw;  
+}
+#about,#tours{
+    background:rgb(213, 232, 236);
+}
+.footer{
+    height:240px;
+    display:grid;
+    place-items: center;
+    background:rgb(6, 42, 63);
+    color:white;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.navbar{
+    /* box-shadow: 0 10px 10px rgba(0,0,0,0.4); */
+    width:98vw;
+}
+.top-link{
+    background:rgb(0, 195, 255);
+    font-size:20px;
+    color: white;
+    padding:5px 8px;
+    border-radius: 8px;
+    position:fixed; 
+    bottom:50px;
+    right:50px;
+    visibility:hidden;
+}
+.show-top-link{
+    visibility:visible;
+}
